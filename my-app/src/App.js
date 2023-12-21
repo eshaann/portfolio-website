@@ -9,6 +9,7 @@ import Home from "./pages";
 import Education from "./pages/education";
 import Projects from "./pages/projects";
 import Experience from "./pages/experience";
+import Footer from "./components/Footer"
 
 function App() {
 	return (
@@ -20,6 +21,7 @@ function App() {
       <Route path = "/projects" element = {<Projects />} />
       <Route path = "/education" element = {<Education />} />
       </Routes>
+      <Footer />
 		</Router>
 	);
 }

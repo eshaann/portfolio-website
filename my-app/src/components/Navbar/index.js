@@ -4,8 +4,10 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import './index.css';
 import { motion } from 'framer-motion';
+import logo from '../../images/EshaanNa.png'
 
 export default function Navigation() {
+    //Cursor animation stuff
   const [mousePosition, setMousePosition] = useState({
     x:0,
     y:0
@@ -33,10 +35,10 @@ export default function Navigation() {
     <div>
     <Navbar bg="dark" variant = "dark" expand="lg" sticky="top">
       <Container>
-        <Navbar.Brand href="/"> <img src="../../images/Eshaan.png" alt="Logo"></img></Navbar.Brand>
+        <Navbar.Brand href="/"> <img src={logo} alt="Logo"></img></Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="ml-auto">
+          <Nav className="ms-auto">
             <Nav.Link href="/experience">Experience</Nav.Link>
             <Nav.Link href="/projects">Projects</Nav.Link>
             <Nav.Link href="/Education">Education</Nav.Link>
