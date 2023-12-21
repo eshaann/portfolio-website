@@ -4,7 +4,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import './index.css';
 import { motion } from 'framer-motion';
-import logo from '../../images/EshaanNa.png'
+import logo from '../../images/EshaanNai.png'
 
 export default function Navigation() {
     //Cursor animation stuff
