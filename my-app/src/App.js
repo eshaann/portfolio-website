@@ -1,5 +1,5 @@
 import React from "react";
-import Navbar from "./components/Navbar";
+import Navigation from "./components/Navbar";
 import {
 	BrowserRouter as Router,
 	Routes,
@@ -14,7 +14,7 @@ import Footer from "./components/Footer"
 function App() {
 	return (
 		<Router>
-			<Navbar />
+			<Navigation />
       <Routes>
       <Route path = "/" element = {<Home />} />
       <Route path = "/experience" element = {<Experience />} />

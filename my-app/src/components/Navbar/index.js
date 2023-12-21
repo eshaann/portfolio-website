@@ -35,7 +35,7 @@ export default function Navigation() {
     <div>
     <Navbar bg="dark" variant = "dark" expand="lg" sticky="top">
       <Container>
-        <Navbar.Brand href="/"> <img src={logo} alt="Logo"></img></Navbar.Brand>
+        <Navbar.Brand href="/"> <span>Eshaan Nair</span></Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">

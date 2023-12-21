@@ -12,3 +12,14 @@
     left: 0;
 }
 
+a:hover {
+    border-bottom: 8px solid purple;  /* On a hover/mouse-over event, we're set the color of the underline to purple */
+}
+
+h2{
+    text-decoration: underline purple;
+}
+
+span{
+    font-family: 'Lato', sans-serif;
+}
