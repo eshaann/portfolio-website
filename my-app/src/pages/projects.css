@@ -1,0 +1,11 @@
+.project-container {
+    position: relative;
+    z-index: 2;
+    padding: 2em;
+  }
+  
+  .project-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }

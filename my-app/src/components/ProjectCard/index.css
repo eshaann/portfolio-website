@@ -1,0 +1,28 @@
+.project-card {
+    transition: 0.3s;
+    cursor: pointer;
+  }
+  
+  .project-card:hover {
+    transform: scale(1.1);
+  }
+  
+  .project-card .card-img-top {
+    object-fit: cover;
+    height: 180px;
+    border-radius: 4px;
+  }
+  
+  .project-card .card-body {
+    background: rgba(0,0,0,0.5);
+    color: white;
+  }
+  
+  .project-card .btn-primary {
+    transition: 0.3s;
+    opacity: 0;
+  }
+  
+  .project-card:hover .btn-primary {
+    opacity: 1;
+  }
