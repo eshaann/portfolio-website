@@ -9,7 +9,7 @@ import Home from "./pages";
 import Education from "./pages/education";
 import Projects from "./pages/projects";
 import Experience from "./pages/experience";
-import Footer from "./components/Footer"
+import Footer from "./components/Footer";
 
 function App() {
 	return (
