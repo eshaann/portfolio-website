@@ -18,6 +18,14 @@ function Home() {
     <div>
       <div className="bg">
       <Particles
+      style={{
+        position: "absolute",
+        top: 0,
+        left: 0,
+        right: 0,
+        bottom: 0,
+        zIndex: 3
+      }}
       id="tsparticles"
       init={particlesInit}
 

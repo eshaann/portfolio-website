@@ -1,10 +1,9 @@
 import React from 'react'
-import { Card, Container, Row, Col } from 'react-bootstrap';
-import Typed from 'react-typed';
 import './experience.css';
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
-import Cursor from '../components/Cursor'
+import Cursor from '../components/Cursor';
+import WorkExperience from '../components/WorkExperience';
 
 function Experience() {
   const particlesInit = async (main) => {
@@ -19,6 +18,14 @@ function Experience() {
     <div>
             <div className="bg">
       <Particles
+      style={{
+        position: "absolute",
+        top: 0,
+        left: 0,
+        right: 0,
+        bottom: 0,
+        zIndex: 1
+      }}
       id="tsparticles"
       init={particlesInit}
 
@@ -138,41 +145,7 @@ function Experience() {
     />
       </div>
       <div>
-      <Container fluid style={{ backgroundColor: 'white', minHeight: '100vh' }}>
-      <h1 style={{ textAlign: 'center', marginBottom: '50px', color:"purple"}}>Work Experience</h1>
-      <Row className="d-flex justify-content-center">
-        <Col xs={12} md={6}>
-          <Card bg="dark" text="white" className="mb-3" style={{ minHeight: '200px' }}>
-            <Card.Body>
-              <Card.Title>Software Engineering and Digital Intern, Ria Money Transfer | Summer 2022</Card.Title>
-              <Card.Text>
-                <ul>
-                  <li>Built a webscaper in C# to gather competitor money transfer rates for key corridors and store in SQL database</li>
-                  <li>Automated data collection of competitor rates - shaved 30+ minutes per day if done manually</li>
-                  <li>Built Vue js component for digital app and Angular js component for internal-utilized Selenium for Webdriver</li>
-                </ul>
-              </Card.Text>
-            </Card.Body>
-          </Card>
-          <Card bg="dark" text="white" className="mb-3" style={{ minHeight: '200px' }}>
-            <Card.Body>
-              <Card.Title>Kitchen Crew Member, McDonald’s | May - August 2023</Card.Title>
-              <Card.Text>
-                <ul>
-                  <li>Quickly and efficiently assembled and prepared a high volume of orders, demonstrating strong attention to detail and accuracy</li>
-                  <li>Adapted to fast-paced working conditions, effectively prioritizing tasks and maintaining a smooth workflow</li>
-                </ul> 
-              </Card.Text>
-            </Card.Body>
-          </Card>
-          <Card bg="dark" text="white" className="mb-3" style={{ minHeight: '200px' }}>
-            <Card.Body>
-              <Card.Title>Cashier, Fireside Cafe | October 2023-current</Card.Title>
-            </Card.Body>
-          </Card>
-        </Col>
-      </Row>
-    </Container>
+      <WorkExperience />
     </div>
     <Cursor />
     </div>

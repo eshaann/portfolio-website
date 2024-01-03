@@ -21,7 +21,7 @@ function Intro() {
     <div className="typing">
     <h2>
         I am into{' '}
-        <Typed
+        <Typed 
           loop
           typeSpeed={50}
           backSpeed={50}
